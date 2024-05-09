@@ -2,7 +2,8 @@
 {
     static void Main()
     {
-        Mensageiro mensageiro = new Mensageiro();
-        mensageiro.EnviarMensagem("Olá, mundo!");
+        IMensageiro mensageiro = new Mensageiro();
+        EnviadorDeMensagem enviador = new EnviadorDeMensagem(mensageiro);
+        enviador.Enviar("Olá, mundo DI!");
     }
 }

@@ -1,4 +1,4 @@
-﻿public class Mensageiro
+﻿public class Mensageiro : IMensageiro
 {
     public void EnviarMensagem(string mensagem)
     {
